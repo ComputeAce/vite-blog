@@ -11,6 +11,7 @@ function RegisterForm() {
 
   const [message, setMessage] = useState(null);
   const [isError, setIsError] = useState(false);
+  const [loading, setLoading] = useState(false); // Loading state
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -32,6 +33,9 @@ function RegisterForm() {
       return;
     }
 
+    // Start loading state
+    setLoading(true);
+
     try {
       const res = await axios.post("http://localhost:8000/api/users/register", {
         username: formData.username,
@@ -45,6 +49,9 @@ function RegisterForm() {
     } catch (err) {
       setMessage(err.response?.data?.message || "Registration failed.");
       setIsError(true);
+    } finally {
+      // Stop loading state
+      setLoading(false);
     }
   };
 
@@ -104,8 +111,17 @@ function RegisterForm() {
                   />
                 </div>
                 <div className="d-grid">
-                  <button type="submit" className="btn text-light rounded-2" style={{ backgroundColor: "#872642" }}>
-                    Register
+                  <button 
+                    type="submit" 
+                    className="btn text-light rounded-2" 
+                    style={{ backgroundColor: "#872642" }}
+                    disabled={loading} // Disable button while loading
+                  >
+                    {loading ? (
+                      <span>Loading...</span> // You can replace this with a spinner
+                    ) : (
+                      "Register"
+                    )}
                   </button>
                 </div>
               </form>
