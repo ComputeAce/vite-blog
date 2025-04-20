@@ -1,16 +1,25 @@
-<<<<<<< HEAD
-# vite-blog
-=======
-# React + Vite
+# 📝 Vite Blog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Vite Blog is a modern fullstack blog platform built with **React + Vite** on the frontend and **Spring Boot** on the backend.
 
-Currently, two official plugins are available:
+The project allows users to read, create, update, and delete blog posts in a clean and responsive interface. It is designed to be fast, scalable, and easy to deploy, with a strong focus on performance and developer experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔧 Technologies Used
 
-## Expanding the ESLint configuration
+- **Frontend:** React 19, Vite, Tailwind CSS, React Router, Axios
+- **Backend:** Spring Boot, Spring Web, Spring Data JPA, H2/MySQL
+- **Deployment:** GitHub Pages (Frontend), Localhost or Cloud (Backend)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> d5fe461 (Initial commit)
+## 🎯 Goals
+
+- Build a performant and modern blog application
+- Separate concerns with a clear frontend-backend architecture
+- Implement a REST API backend and consume it with a React frontend
+- Enable deployment-ready configuration
+
+## 🌐 Live Demo
+
+Frontend: [https://computeace.github.io/vite-blog](https://computeace.github.io/vite-blog)
+
+---
+
