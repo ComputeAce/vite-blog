@@ -20,9 +20,9 @@ function Header() {
             Login
           </button>
 
-          <button className="btn text-light" style={{ backgroundColor: "#872642" }}>
+          <a href="/register" className="btn text-light" style={{ backgroundColor: "#872642" }}>
           Register
-          </button>
+          </a>
 
         </div>
       </Container>

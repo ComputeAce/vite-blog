@@ -32,7 +32,7 @@ function Search() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
-          <button type="submit" className="btn btn-light">Search</button>
+         
         </form>
         {error && <p className="mt-3 text-danger">{error}</p>}
       </div>
