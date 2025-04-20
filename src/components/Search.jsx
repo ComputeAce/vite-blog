@@ -22,8 +22,8 @@ function Search() {
 
   return (
     <div className="d-flex align-items-center justify-content-center text-white my-5">
-      <div className="bg-opacity-50 p-5 rounded text-center w-75" style={{ backgroundColor: "#57648C" }}>
-        <h1 className="mb-4">Find What You're Looking For</h1>
+      <div className="bg-opacity-50 p-5 rounded text-center w-75"  style={{ backgroundColor: "#f5f5f5" }}>
+        <h1 className="mb-4" style={{ color: "#872642" }}>Find What You're Looking For</h1>
         <form className="d-flex justify-content-center" onSubmit={handleSearch}>
           <input
             type="text"
@@ -32,7 +32,7 @@ function Search() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
-          <button type="submit" className="btn btn-light">Search</button>
+         
         </form>
         {error && <p className="mt-3 text-danger">{error}</p>}
       </div>

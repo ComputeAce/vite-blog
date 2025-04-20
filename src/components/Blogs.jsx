@@ -53,7 +53,7 @@ function Blogs() {
         <div className="row justify-content-center">
           {posts.map((post, index) => (
             <div className="col-lg-4 mb-4" key={index}>
-              <div className="card shadow-sm h-100">
+              <div className="card shadow-sm h-100" style={{ backgroundColor: "#f5f5f5" }}>
                 <img
                   src={post.image.startsWith("http") ? post.image : `http://localhost:8000${post.image}`}
                   className="card-img-top"

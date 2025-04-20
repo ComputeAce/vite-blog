@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
 import Blogs from './components/Blogs';
-import PostView from './pages/PostView'; // Import your PostView component
+import PostView from './pages/PostView';
+import Register from './pages/Register'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const router = createBrowserRouter([
@@ -12,9 +13,15 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: '/blogs', // Define the '/blogs' route
-    element: <Blogs />, // This should render the BlogList component
+    path: '/blogs', 
+    element: <Blogs />, 
   },
+
+  {
+    path: '/register',
+    element: <Register/>,
+  },
+
   {
     path: '/post/:id',
     element: <PostView />,

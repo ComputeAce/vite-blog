@@ -46,8 +46,8 @@ function PostDetails() {
         </div>
 
         {/* Post Content */}
-        <div className="col-lg-12 mb-4">
-          <div className="p-4 bg-white rounded shadow-sm">
+        <div className="col-lg-12 mb-4"  style={{ backgroundColor: "#f5f5f5" }}>
+          <div className="p-4 ">
             <p className="text-muted" style={{ textAlign: "justify", lineHeight: "1.8" }}>
               {post.contents}
             </p>
@@ -55,8 +55,8 @@ function PostDetails() {
         </div>
 
         {/* Author */}
-        <div className="col-lg-12">
-          <div className="d-flex align-items-center bg-light p-3 rounded shadow-sm mt-4">
+        <div className="col-lg-12"  style={{ backgroundColor: "#f5f5f5" }}>
+          <div className="d-flex align-items-center bg-light p-3 rounded mt-4">
             <img
               src={photo} // Default author image
               alt="Author"
