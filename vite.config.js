@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/', // 👈 Important for GitHub Pages
+  base: '/vite-blog', 
 
   server: {
     port: 4000,
