@@ -5,6 +5,7 @@ import App from './App';
 import Blogs from './components/Blogs';
 import PostView from './pages/PostView';
 import Register from './pages/Register'; 
+import CreatePost from './pages/CreatePost';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const router = createBrowserRouter([
@@ -18,6 +19,11 @@ const router = createBrowserRouter([
   },
 
   {
+    path: '/create-post', 
+    element: <CreatePost />, 
+  },
+
+  {
     path: '/register',
     element: <Register/>,
   },
@@ -26,6 +32,7 @@ const router = createBrowserRouter([
     path: '/post/:id',
     element: <PostView />,
   },
+
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
