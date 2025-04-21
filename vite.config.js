@@ -8,5 +8,6 @@ export default defineConfig({
     port: 4000,
   },
   plugins: [react(), tailwindcss()],
+  base: mode === 'production' ? '/vite-blog/' : '/',
 
 })
