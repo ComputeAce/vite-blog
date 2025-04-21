@@ -32,6 +32,7 @@ const router = createBrowserRouter([
     path: '/post/:id',
     element: <PostView />,
   },
+
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
