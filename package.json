@@ -1,5 +1,6 @@
 {
   "name": "my-react-app",
+  "homepage": "https://computeace.github.io/vite-blog/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
