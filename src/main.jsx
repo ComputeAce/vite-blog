@@ -5,6 +5,7 @@ import App from './App';
 import Blogs from './components/Blogs';
 import PostView from './pages/PostView';
 import Register from './pages/Register'; 
+import CreatePost from './pages/CreatePost';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const router = createBrowserRouter([
@@ -15,6 +16,11 @@ const router = createBrowserRouter([
   {
     path: '/blogs', 
     element: <Blogs />, 
+  },
+
+  {
+    path: '/create-post', 
+    element: <CreatePost />, 
   },
 
   {
